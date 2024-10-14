@@ -1,0 +1,11 @@
+#!name=SoundCloudGo+ 
+
+#!desc=SoundCloudGo+ ( Le Van Phong ) IG _Anginx
+
+[Script]
+
+SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
+
+[MITM]
+
+hostname= %APPEND% api-mobile.soundcloud.com
